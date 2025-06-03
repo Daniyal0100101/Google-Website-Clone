@@ -112,7 +112,7 @@ function initializeSearchFunctionality() {
     searchButtons.forEach((button) => {
       button.addEventListener("click", () => {
         if (button.id === "lucky-button") {
-          elements.luckyButton.click();
+          handleLuckyButtonClick();
         } else {
           elements.searchForm.submit();
         }
